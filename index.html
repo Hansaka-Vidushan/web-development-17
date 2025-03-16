@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Project 17</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <header>Web Project6 17</header>
+
+    <div>
+        <p id="p1">Text 01</p>
+        <button id="btn1">Fade <span id="txt1">out</span></button>
+    </div>
+
+
+
+
+
+
+
+    <script>
+        $("#btn1").click(function () {
+
+            if ($("#txt1").html() == "out") {
+                $("#p1").fadeOut();
+                $("#txt1").html("in");
+
+            } else {
+                $("#p1").fadeIn();
+                $("#txt1").html("out");
+
+            }
+
+
+        });
+
+       
+    </script>
+
+</body>
+
+</html>
